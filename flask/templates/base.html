@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Toxic Comment Classification</title> <!-- Заглавие страницы -->
+    <link rel="stylesheet" type="text/css" href="static/style.css" /> <!-- Стили -->       
+  </head>
+    
+  <body>
+      <div class='body'> <!-- Основной контент страницы -->
+          <p></p>
+          <p></p>
+      <center></center>
+          <header>
+              <h1>
+                  Toxic Comment Classification<hr>
+              </h1>
+          </header>
+          
+    <main>
+        <div class="header">
+                {% block header %}
+                {% endblock %}
+        </div>
+        
+        <div class="tabs">
+            <input type="radio" name="inset" value="" id="tab_1" checked> <!-- Вкладка 1 -->
+            <label for="tab_1">Классификатор</label>    
+            <input type="radio" name="inset" value="" id="tab_2"> <!-- Вкладка 2 -->
+            <label for="tab_2">Описание</label>
+            <input type="radio" name="inset" value="" id="tab_3"> <!-- Вкладка 3 -->  
+            <label for="tab_3">Метрики</label>
+            <input type="radio" name="inset" value="" id="tab_4"> <!-- Вкладка 4 -->  
+            <label for="tab_4">Контакты</label>
+            
+            <div id="txt_1"> <!-- Вкладка 1 -->
+                {% block tab1 %}
+                {% endblock %}
+            </div>
+            <div id="txt_2"> <!-- Вкладка 2 -->
+                {% block tab2 %}
+                {% endblock %}
+            </div>
+            <div id="txt_3"> <!-- Вкладка 3 -->
+                {% block tab3 %}
+                {% endblock %}
+                </div>
+            <div id="txt_4"> <!-- Вкладка 4 -->
+                {% block tab4 %}
+                {% endblock %}
+                </div>
+            </div>
+    </main>
+    </div>
+    <footer>
+        <hr><center>2020</center>
+    </footer>
+
+      <center></center>
+    </body>
