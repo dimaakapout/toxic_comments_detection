@@ -1,0 +1,125 @@
+ /* Переменные с цветами */
+:root {
+    --main-color: #f5ffe0;
+    --main-border: #dce3cf;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    height: 1000px;
+    background-image: url(background2.jpg);
+}
+
+ /* Заголовок с названием страницы */
+header {
+    background: var(--main-color);
+    border-radius: 15px 15px 0px 0px;
+    text-shadow: 4px 2px 2px #dce3cf;
+    box-shadow: 0px 0px 2px 1px rgba(12, 13, 14, 0.99);
+    font-family: monospace;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid var(--main-border);
+}
+
+
+ /* Контент страницы перед вкладками */
+div.header {
+    background: var(--main-color);
+    box-shadow: 0px 0px 2px 1px rgba(12, 13, 14, 0.99);
+    border-width: medium;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+
+ /* Вкладки */
+.tabs {
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+}
+.tabs>input {
+    display: none;
+}
+
+ /* Тело вкладок */
+.tabs>div {
+    display: none;
+    padding: 12px;
+    background:  var(--main-color);
+    border: 10px solid var(--main-border);  
+    box-shadow:0px 0px 2px 1px rgba(12, 13, 14, 0.99);
+    border-radius: 0px 0px 15px 15px;
+    border-width: medium;
+    font-size: 20px;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Вкладка закладка */
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid var(--main-border);
+    background: #E0E0E0;
+    cursor: pointer;
+
+}
+
+/* Вкладка закладка нажата */
+.tabs>input:checked + label {
+    color: #000000;
+    border-left-color: dimgray;
+    border-left-width: medium;
+    border-left-style: inset;
+    border-right-color: dimgray;
+    border-right-width: medium;
+    border-right-style: inset;
+    border-top-color: dimgray;
+    border-top-width: medium;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background: var(--main-color);
+}
+
+
+/* Где на какую вкладку переходим*/
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4 { display: block; }
+
+ /* КнопкИ */
+input[type=text] {
+    
+    padding: 10px;
+    border: 10px ;
+    box-shadow: 7px 7px 7px -1px rgba(34, 60, 80, 0.54);
+    border-radius: 15px;
+    width: 450px;
+}
+
+ /* submit */
+.btn {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #9ee010;
+  background-image: #9ee010;
+  text-decoration: none;
+}
